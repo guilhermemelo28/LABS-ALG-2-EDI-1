@@ -11,7 +11,7 @@ racional *  generate(){
     p = (racional*)  malloc(sizeof(racional));
     return p;
 }
-
+//Setando os valores
 int set_value(racional * p, int n, int d){
     if(p == NULL || d == 0)
     {
@@ -22,7 +22,7 @@ int set_value(racional * p, int n, int d){
 
     return 1; // Foi possivel setar o valor
 }
-
+//Pegando os valores:
 int get_value(racional * p, int *n,int *d){
     if(p == NULL)
     {

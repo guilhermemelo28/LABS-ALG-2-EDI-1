@@ -7,7 +7,8 @@ int main()
     int num, den;
     racional *n1, *n2, *n3;
 
-    n1 = generate(); n2 = generate(); // Estamos gerando dois numeros racionais
+    n1 = generate(); 
+    n2 = generate(); // Estamos gerando dois numeros racionais
 
     if(n1 == NULL || n2 == NULL) //Verificando se foi possivel alocar a memoria
     {
@@ -51,7 +52,9 @@ int main()
     }
 
     printf("O resultado da soma eh:  Numeradores:%d. Denominadores: %d",num,den);
-    delete(&n1); delete(&n2); delete(&n3);
+    delete(&n1); 
+    delete(&n2); 
+    delete(&n3);
 
     return 0;
 }
