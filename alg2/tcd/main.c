@@ -116,7 +116,7 @@ int main()
                         break;
 
                     case 2:
-                        if ((verificaOrdem(vet, tamvetor)) == 1)
+                        if ((verificaOrdem(vettemp, tamvetor)) == 1)
                         {
                             somaTempo = 0.0;
                             printf(" O vetor esta Ordenado!\n");
@@ -125,7 +125,7 @@ int main()
                             for(i = 0; i < 100; i++){
                             QueryPerformanceCounter(&inicio);
 
-                            achou = buscaBinaria(vet, tamvetor, buscarelemento);
+                            achou = buscaBinaria(vettemp, tamvetor, buscarelemento);
                             algExecutado = 1;
 
                             QueryPerformanceCounter(&fim);

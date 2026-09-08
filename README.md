@@ -1,4 +1,4 @@
-# LABS - Algoritmos 2
+# LABS - Algoritmos 2 e Estrutura de Dados 1 
 
 Repositório para armazenamento das atividades da disciplina de Algoritmos 2.
 
