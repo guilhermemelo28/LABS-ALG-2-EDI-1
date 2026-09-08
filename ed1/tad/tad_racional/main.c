@@ -16,7 +16,8 @@ int main()
     }
 
     printf("Digite o valor do numerador e do denominador do primeiro racional:\n");
-    scanf("%d",&num); scanf("%d",&den); //Atribuindo os valores 
+    scanf("%d",&num); 
+    scanf("%d",&den); //Atribuindo os valores 
 
     if(set_value(n1,num,den) == 0) 
     {
@@ -25,7 +26,8 @@ int main()
     }
 
     printf("Digite o valor do numerador e do denominador do segundo racional:\n");
-    scanf("%d",&num); scanf("%d",&den); //Atribuindo os valores 
+    scanf("%d",&num); 
+    scanf("%d",&den); //Atribuindo os valores 
 
     if(set_value(n2,num,den) == 0) 
     {
