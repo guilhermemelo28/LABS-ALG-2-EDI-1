@@ -1,6 +1,6 @@
-typedef struct posicoes posicao;
-posicao* criar_ponto(double *xis, double *yi);
-double distancia_pto(posicao *p1, posicao *p2);
-void liberar_ponto(posicao **p);
+typedef struct pontos ponto;
+ponto* criar_ponto(double *xis, double *yi);
+double distancia_pto(ponto *p1, ponto *p2);
+void liberar_ponto(ponto **p);
 
 

@@ -3,15 +3,15 @@
 #include<math.h>
 #include"posicao.h"
 
-struct posicoes{
+struct pontos{
     double x;
     double y;
 };
 
-posicao* criar_ponto(double *xis, double *yi)
+ponto* criar_ponto(double *xis, double *yi)
 {
-    posicao *p;
-    p = (posicao*)  malloc(sizeof(posicao));
+    ponto *p;
+    p = (ponto*)  malloc(sizeof(ponto));
     if(p == NULL)
     {
         return NULL;
@@ -22,7 +22,7 @@ posicao* criar_ponto(double *xis, double *yi)
     return p; //retorna o ponteiro para um ponto
 }
 
-double distancia_pto(posicao *p1, posicao *p2)
+double distancia_pto(ponto *p1, ponto *p2)
 {
     
     double disx, disy, distotal;
@@ -50,9 +50,9 @@ double distancia_pto(posicao *p1, posicao *p2)
         return distotal;
 }
 
-void liberar_ponto(posicao **p){
+void liberar_ponto(ponto **p){
     free(p); //libera memoria alocada
-    p = NULL;//limpa o ponteiro para racional
+    p = NULL;//limpa o ponteiro para ponto
 }
 
 

@@ -3,7 +3,7 @@
 
 int main()
 {
-    posicao *p1, *p2;
+    ponto *p1, *p2;
     double x,y;
 
     printf("Digite as coordenadas x e y do primeiro ponto:\n");
