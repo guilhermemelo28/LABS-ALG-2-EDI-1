@@ -23,36 +23,19 @@ ponto* criar_ponto(double *xis, double *yi)
 }
 
 double distancia_pto(ponto *p1, ponto *p2)
-{
-    
+{    
     double disx, disy, distotal;
 
-    //temos que verificar qual eh o maior, pois nao existe medida negativa
-    if(p1->x >= p2->x)
-        {
-            disx = p1->x - p2->x;
-        }
-    else
-        {
-            disx = p2->x - p1->x;
-        }
-
-        if(p1->y >= p2->y)
-        {
-            disy = p1->y - p2->y;
-        }
-    else
-        {
-            disy = p2->y - p1->y;
-        }
+    disx = p1->x - p2->x;
+    disy = p1->y - p2->y;
     
-        distotal = sqrt((pow(disx,2)) +(pow(disy,2))); //calcula a distancia 
-        return distotal;
+    distotal = sqrt((pow(disx,2)) +(pow(disy,2))); //calcula a distancia 
+    return distotal;
 }
 
 void liberar_ponto(ponto **p){
-    free(p); //libera memoria alocada
-    p = NULL;//limpa o ponteiro para ponto
+    free(*p); //libera memoria alocada
+    *p = NULL;//limpa o ponteiro para ponto
 }
 
 
