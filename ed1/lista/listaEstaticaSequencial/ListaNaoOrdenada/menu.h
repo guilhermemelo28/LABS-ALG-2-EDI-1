@@ -8,3 +8,4 @@ int lista_cheia(Lista lst);
 int insere_elem(Lista lst, int elem);
 int remove_elem(Lista lst, int elem);
 void imprimeLista(Lista lst);
+void libera_lista(Lista *lst);

@@ -53,5 +53,7 @@ int main(){
     }    
     
     }while(opcao != 5);
+    libera_lista(&L);
+    return 0;
 
 }

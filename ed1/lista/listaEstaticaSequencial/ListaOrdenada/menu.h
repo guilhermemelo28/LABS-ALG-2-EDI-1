@@ -11,3 +11,4 @@ void imprimeLista(Lista lst);
 int verificaOrdenacao(Lista lst);
 void Bubblesort (Lista lst);
 void troca(int *vet,int j, int x);
+void libera_lista(Lista *lst);

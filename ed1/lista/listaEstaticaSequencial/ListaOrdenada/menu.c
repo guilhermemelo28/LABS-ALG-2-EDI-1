@@ -149,3 +149,8 @@ void imprimeLista(Lista lst){
     printf("\n");
 }
 
+void libera_lista(Lista *lst)
+{
+    free(*lst);
+    *lst = NULL; 
+}

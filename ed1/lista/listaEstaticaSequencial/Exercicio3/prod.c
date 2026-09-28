@@ -1,14 +1,16 @@
-//Nesse arquivo esta a implementação das funções
 #include<stdio.h>
-#include<stdlib.h>
-#include "menu.h"
+#include "prod.h"
 
 #define max 11
 struct lista
 {
     int vet[max];
     int fim;
+    char nome[20];
+    float preco;
+    int volume;
 };
+
 
 Lista cria_lista(){
     Lista lst;
@@ -39,7 +41,34 @@ int lista_cheia(Lista lst){
         return 0; // lista nao cheia
 }
 
-int insere_elem(Lista lst, int elem){
+int insere_nome(Lista lst, int elem){
+    if(lst == NULL)
+    {
+        return 0;
+    }
+    if(lista_cheia(lst) == 1)
+    {
+        return -1;
+    }
+    lst->vet[lst->fim] = elem;
+    lst->fim++;
+    return 1;
+}
+int insere_volume(Lista lst, int elem){
+    if(lst == NULL)
+    {
+        return 0;
+    }
+    if(lista_cheia(lst) == 1)
+    {
+        return -1;
+    }
+    lst->vet[lst->fim] = elem;
+    lst->fim++;
+    return 1;
+}
+
+int insere_preco(Lista lst, int elem){
     if(lst == NULL)
     {
         return 0;
@@ -83,9 +112,4 @@ void imprimeLista(Lista lst){
         printf("%d\n",lst->vet[i]);
     }
     printf("\n");
-}
-void libera_lista(Lista *lst)
-{
-    free(*lst);
-    *lst = NULL; 
 }
