@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include "menu.h"
-
-int main(){
-        Lista L;
+Lista L;
     int elem,opcao;
     do{
     printf("Escolha a opção que voce deseja realizar:\n");
@@ -24,7 +22,7 @@ int main(){
             printf("Lista criada com sucesso!\n");
         }
         break;
-    
+
         case 2:
             printf("Digite o elemento que voce deseja adicionar:");
             scanf("%d",&elem);
@@ -36,7 +34,7 @@ int main(){
                 printf("Elemento adicionado com sucesso!\n");
             }
             break;
-        
+
         case 3:
             printf("Digite o elemento que voce deseja remover:");
             scanf("%d",&elem);
@@ -50,10 +48,12 @@ int main(){
 
     default:
         break;
-    }    
-    
+    }
+
     }while(opcao != 5);
     libera_lista(&L);
     return 0;
 
 }
+int main(){
+
